@@ -86,6 +86,11 @@ public class CreateLead {
 		submit.click();
 		
 		//Get the Lead ID
+		WebElement leadid = driver.findElement(By.id("viewLead_companyName_sp"));
+		leadid.getText();
+		System.out.println(leadid.getText());
+		
+		
 		//close the window
 		driver.close();
 
